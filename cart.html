@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cardt</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!--Navbar----------------------------------------------------------------------------------------------------------------------------->
+
+<section id="header">
+	
+	<nav class="navbar navbar-expand-lg navbar-custom ">
+  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Shop
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="product.html">Product Page</a>
+          <a class="dropdown-item" href="#">Shopping Card</a>
+          <a class="dropdown-item" href="checkout.html">Check out</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li> 	
+    </ul>
+  </div>
+  <div class="user-access">
+<a href="#">Register</a>
+<a href="#" class="in">Sign in</a>
+</div>
+<div class="header-right">
+<img src="images/h1.png" alt="" class="search-trigger">
+<img src="images/h2.png" alt="">
+<a href="#"><img src="images/h3.png" alt="">
+<span>2</span>
+</a>
+</div>
+</nav>
+</section>
+<!--------coupan----------------------------------------------------------------------------------------------------------->
+
+<div class="coupan">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="coupan-item">
+          <img src="images/a1.png">
+          <p>Free Shipping on Order over Rs 50 in India</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-left text-lg-center">
+        <div class="coupan-item">
+          <img src="images/voucher.png">
+          <p>20% Student Discount</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-left text-xl-right">
+        <div class="coupan-item">
+          <img src="images/sales.png">
+          <p>30% off on dresses.Use Code:30OFF</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--pageadd---------------------------------------------------------------------------------->
+<section class="page-add cart-page-add">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="page-breadcrumb">
+					<h2>Cart<span>.</span></h2>
+					<a href="project1.html">Home</a>
+					<a href="#">Dresses</a>
+					<a class="active" href="#">Night Dress</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<img src="images/add.webp">
+			</div>
+		</div>
+	</div>
+</section>
+<!-----Shoping cart--------------------------------------------------------------------------------------------------->
+<div class="cart-page">
+	<div class="container">
+		<div class="cart-table">
+			<table>
+				<thead>
+					<tr>
+						<th class="product-h">Product</th>
+						<th>Price</th>
+						<th class="quan">Quantity</th>
+						<th>Total</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="product-col">
+							<img src="images/pr1.jpg">
+							<div class="p-title">
+								<h5>Denim blue Shirt</h5>
+							</div>
+						</td>
+						<td class="price-col">1200</td>
+						<td class="quantity-col">
+							<div class="pro-qty">
+								<input type="text" value="1">
+							</div>
+						</td>
+						<td class="total">Rs.1200</td>
+						<td class="product-close">X</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="cart-btn">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="coupan-input">
+						<input type="text" placeholder="Enter Coupan code">
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1 text-left text-lg-right">
+					<button type="button" class="btn2 btn-light">Clear Cart</button>
+					<button type="button" class="btn2 btn-light">Update Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shopping-method">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="shipping-info">
+						<h5>Choose a Shipping</h5>
+						<div class="chose-shipping">
+							<div class="cs-item">
+								<input type="radio" name="cs" id="one">
+								<label for="one" class="active">
+									Free Standard Shipping
+									<span>(Estimate for Agra)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="two">
+								<label for="two">
+									Next day Delievery Rs.50
+								</label>
+							</div>
+							<div class="cs-item last">
+								<input type="radio" name="cs" id="three">
+								<label for="three">
+									In Store Pickup-Free
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="total-info">
+						<div class="total-table">
+							<table>
+								<thead>
+									<tr>
+										<th>Total</th>
+										<th>Subtotal</th>
+										<th>Shipping</th>
+										<th class="total-cart">Total Cart</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="total">Rs.1200</td>
+										<td class="sub-total">Rs.1200</td>
+										<td class="shipping">Rs.50</td>
+										<td class="total-cart-p">Rs.1250</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 text-right">
+							<button type="button" class="btn3 btn-light">Proceed to Checkout</button>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+  <!---Footer------------------------------------------------------------------------------>
+  
+  <footer class="footer-section">
+    <div class="container">
+      <div class="newletter-form">
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="#">
+              <input type="text" placeholder="Your Email Address">
+              <button type="button" class="btn3 btn-light">Subscribe to our newsletter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-widget">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer">
+              <h4>About Us</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Community</li>
+                <li>Jobs</li>
+                <li>Shipping</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer">
+              <h4>Customer Care</h4>
+              <ul>
+                <li>Search</li>
+                <li>Privacy Policy</li>
+                <li>2020 Lookbook</li>
+                <li>Shipping & Delivery</li>
+                <li>Gallery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer">
+              <h4>Our Services</h4>
+              <ul>
+                <li>Free Shipping</li>
+                <li>Free Returns</li>
+                <li>Our Franchising</li>
+                <li>Terms and Condition</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer">
+              <h4>Information</h4>
+              <ul>
+                <li>Payment Method</li>
+                <li>Times And Shipping Costs</li>
+                <li>Product Returns</li>
+                <li>Shipping Methods</li>
+                <li>Conformity of the products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-link-wrap">
+        <div class="container">
+          <div class="social-link">
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+            <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a>
+          </div>
+        </div>
+        <div class="conatiner text-center pt-5">
+          <p>
+            Copyright &copy;<script type="12da457ed3f2144987cb910e-text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Tanmay Khandelwal</a>
+          </p>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
